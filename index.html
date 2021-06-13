@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+      <title>Pizzaria</title>
+      
+      <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <script src="main.js"></script>
+    <body>
+        <nav class="navbar-inverse my_nav_bar">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Cosmos369</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                   <button type="button" onclick ="showmenu()" style="width: 75px; height: 50px; background-color: black; color: white;">Show Menu</button>
+                   <button type="button" onclick = "add_item()" ondblclick="close()" style="width: 75px; height: 50px; background-color: black; color: white;">Add</button>
+                   <input id="add" placeholder="Add your item here" type="text" style="background-color: gray; visibility: hidden;">
+                   <button type="button"  id="submit" onclick ="submit()"  style="width: 75px; height: 25px; background-color: black; color: white; visibility: hidden;">submit</button>
+                   <button type="button" onclick ="hidemenu()"  style="width: 75px; height: 50px; background-color: black; color: white;">Hide Menu</button>
+                </ul>
+            </div>
+            </nav>
+            <marquee width="100%" direction="left" height="50px" style="color: white; background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); font-size: 45px;">
+               Cosmos Pizzaria best pizzas in town
+                </marquee>
+            <h1 style="color: white; margin-left: 20px; text-decoration: underline;" >Pizzaria</h1>
+            <h3 style="color: white; margin-left: 20px; text-decoration: underline;"> - By far the best pizza</h3>
+
+            <h1 id="1" style="color: black; visibility: hidden; margin-left: 800px; margin-top: -85px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;"> <mark>MENU</mark></h1>
+            <h2 id="2" style="color: rgb(241, 241, 241); margin-left:800px; visibility: hidden;"> 1. Double cheese margherita</h2>
+            <div> <h2 id="3" style = "color: rgb(255, 255, 255);  margin-left:800px; visibility: hidden;">2. Tandoori paneer pizza</h2> </div>
+            <div><h2 id = "4" style="color: rgb(255, 253, 253); margin-left: 800px; visibility: hidden;"> 3. Peppe Paneer</h2></div>
+            <div><h2 id= "5" style="color: rgb(255, 255, 255); margin-left: 800px; visibility: hidden">4. Chicken Pizza</h2></div>
+            <div><h2 id="6" style="color:rgb(255, 255, 255); margin-left: 800px; visibility: hidden;">5.Mexanese pizza</h2></div>
+            <div><p id="p1"style="color:rgb(255, 255, 255); margin-left: 800px; visibility: hidden; font-size:30px;"></p></div>
+    </body>
+</html>
